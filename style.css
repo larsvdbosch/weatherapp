@@ -1,0 +1,160 @@
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+
+}
+
+.background-gradient {
+
+    background-image: linear-gradient(
+        to right,
+        #64A9C2,
+        #B891BD
+        
+    );
+   width: 100%;
+   position: absolute;
+   height: 100%;
+   z-index: -10;
+   animation: gradient-animation 4s infinite alternate ease-in-out;
+   background-size: 300%;
+   
+}
+
+@keyframes gradient-animation {
+
+    0% {
+background-position: left;
+
+    }
+
+    100% {
+
+        background-position: right;
+    }
+}
+
+.top-left-text {
+    position: absolute;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    color: #333;
+    top: 10px;
+    font-weight: bold;
+}
+
+/* .city {
+
+    font-size: 2em;
+    font-weight: 600;
+    margin: 0;
+    text-align: center;
+}
+
+.temp {
+
+    font-size: 10em;
+    font-weight: 600;
+    text-align: center;
+}
+
+.ondertekst {
+
+    font-weight: 400;
+    font-size: 1em;
+    text-align: center;
+    clear: both;
+}
+
+.weer {
+
+    width: 5em;
+    height: auto;
+}
+
+.icons {
+
+    width: 2em;
+    height: auto;
+    padding: 1em;
+} */
+
+
+.search {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.submit {
+
+    margin: 0.5em;
+}
+
+.weather {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 20px 20px 20px;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    align-items: center;
+    margin: 20px;
+  }
+  
+  .search {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search input {
+    padding: 8px;
+    border: 1px solid #7a5757;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 200px;
+  }
+  
+  .js-submit-input {
+    border: solid #B891BD 3px;
+    color: #000000;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .js-submit-input:hover {
+    background-color: #0056b3;
+  }
+
+  p {
+
+    background-color: white;
+    padding: 7px;
+    border-radius: 4px;
+  }
+
+  .js-output {
+
+    margin-top: 10px;
+  }
+
+  .unsplash {
+
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(4px) brightness(70%);
+
+    
+  }
